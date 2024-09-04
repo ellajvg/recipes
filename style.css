@@ -1,0 +1,136 @@
+body {
+    font-family: "Calibri", serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    transition: scale 0.5s ease;
+    border: none;
+    font-family: "Calibri", serif;
+}
+
+#header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: pink;
+    padding: 0.5em;
+    color: black;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#topBar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #ffdce3;
+    padding: 0.2em;
+    gap: 0.2em;
+    z-index: 2;
+}
+
+#homeBtn, .topBtn {
+    background: transparent;
+    font-size: clamp(14px, 20px, 2.8vw);
+    font-variant: all-small-caps;
+    font-weight: bold;
+    height: 1em;
+}
+
+.dropdown {
+    margin-top: 0.5em;
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 4px;
+    flex-direction: column;
+}
+
+.dropdown button {
+    background: transparent;
+    font-variant: normal;
+    font-size: clamp(10px, 16px, 2vw);
+    text-align: left;
+    white-space: nowrap;
+    padding-bottom: 4px;
+}
+
+.up {
+   display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+/*HOMEPAGE IMAGES*/
+#imageScroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    align-items: stretch;
+}
+
+#leftSide, #rightSide {
+    display: flex;
+    margin-right: 0.5em;
+    align-items: center;
+    z-index: 1;
+}
+
+#images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    overflow: auto;
+    padding: 2em;
+    scrollbar-color: pink transparent;
+}
+
+#images button {
+    background: transparent;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    outline: 6px solid pink;
+    border: 10px solid #ffdce3;
+    font-weight: bold;
+}
+
+#images button:hover {
+    scale: 1.03;
+}
+
+.image {
+    width: 320px;
+    height: 200px;
+    margin-top: 1em;
+}
+
+#images span {
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+#favourites {
+    padding: 1em;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 2em;
+    background: #ffdce3;
+}
+
+
+
+
+

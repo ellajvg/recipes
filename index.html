@@ -2,9 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>recipes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div id="header">Recipes</div>
+
+<div id="topBar">
+    <button id="homeBtn">Home</button>
+    <div id="breakfast">
+        <button id="breakfastBtn" class="topBtn">Breakfast
+            <svg class="down" width="clamp(8px, 12px, 1.5vw)" height="clamp(8px, 12px, 1.5vw)" viewBox="0 -4.5 20 15" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-180.000000, -6684.000000)" fill="#000000"><g transform="translate(56.000000, 160.000000)">
+                        <path d="M144,6525.39 L142.594,6524 L133.987,6532.261 L133.069,6531.38 L133.074,6531.385 L125.427,6524.045
+                        L124,6525.414 C126.113,6527.443 132.014,6533.107 133.987,6535 C135.453,6533.594 134.024,6534.965 144,6525.39">
+                        </path>
+                </g></g>
+            </svg>
+            <svg class="up" width="clamp(8px, 12px, 1.5vw)" height="clamp(8px, 12px, 1.5vw)" viewBox="0 -4.5 20 15" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-140.000000, -6683.000000)" fill="#000000"><g id="icons" transform="translate(56.000000, 160.000000)">
+                        <path d="M84,6532.61035 L85.4053672,6534 L94.0131154,6525.73862 L94.9311945,6526.61986 L94.9261501,6526.61502
+                        L102.573446,6533.95545 L104,6532.58614 C101.8864,6530.55736 95.9854722,6524.89321 94.0131154,6523
+                        C92.5472155,6524.40611 93.9757869,6523.03486 84,6532.61035">
+                        </path>
+                </g></g>
+            </svg>
+        </button>
+        <div id="breakfastMenu" class="dropdown">
+            <button>Banana oat pancakes</button>
+            <button>Breakfast cookies</button>
+        </div>
+    </div>
+    <div id="lunch">
+        <button id="lunchBtn" class="topBtn">Lunch/Dinner
+            <svg class="down" width="clamp(8px, 12px, 1.5vw)" height="clamp(8px, 12px, 1.5vw)" viewBox="0 -4.5 20 15" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-180.000000, -6684.000000)" fill="#000000"><g transform="translate(56.000000, 160.000000)">
+                    <path d="M144,6525.39 L142.594,6524 L133.987,6532.261 L133.069,6531.38 L133.074,6531.385 L125.427,6524.045
+                        L124,6525.414 C126.113,6527.443 132.014,6533.107 133.987,6535 C135.453,6533.594 134.024,6534.965 144,6525.39">
+                    </path>
+                </g></g>
+            </svg>
+            <svg class="up" width="clamp(8px, 12px, 1.5vw)" height="clamp(8px, 12px, 1.5vw)" viewBox="0 -4.5 20 15" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-140.000000, -6683.000000)" fill="#000000"><g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path d="M84,6532.61035 L85.4053672,6534 L94.0131154,6525.73862 L94.9311945,6526.61986 L94.9261501,6526.61502
+                        L102.573446,6533.95545 L104,6532.58614 C101.8864,6530.55736 95.9854722,6524.89321 94.0131154,6523
+                        C92.5472155,6524.40611 93.9757869,6523.03486 84,6532.61035">
+                    </path>
+                </g></g>
+            </svg>
+        </button>
+        <div id="lunchMenu" class="dropdown">
+            <button>Beef bulgogi</button>
+            <button>Caprese sandwich</button>
+            <button>Maple soy salmon</button>
+        </div>
+    </div>
+    <div id="dessert">
+        <button id="dessertBtn" class="topBtn">Dessert
+            <svg class="down" width="clamp(8px, 12px, 1.5vw)" height="clamp(8px, 12px, 1.5vw)" viewBox="0 -4.5 20 15" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-180.000000, -6684.000000)" fill="#000000"><g transform="translate(56.000000, 160.000000)">
+                    <path d="M144,6525.39 L142.594,6524 L133.987,6532.261 L133.069,6531.38 L133.074,6531.385 L125.427,6524.045
+                        L124,6525.414 C126.113,6527.443 132.014,6533.107 133.987,6535 C135.453,6533.594 134.024,6534.965 144,6525.39">
+                    </path>
+                </g></g>
+            </svg>
+            <svg class="up" width="clamp(8px, 12px, 1.5vw)" height="clamp(8px, 12px, 1.5vw)" viewBox="0 -4.5 20 15" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-140.000000, -6683.000000)" fill="#000000"><g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path d="M84,6532.61035 L85.4053672,6534 L94.0131154,6525.73862 L94.9311945,6526.61986 L94.9261501,6526.61502
+                        L102.573446,6533.95545 L104,6532.58614 C101.8864,6530.55736 95.9854722,6524.89321 94.0131154,6523
+                        C92.5472155,6524.40611 93.9757869,6523.03486 84,6532.61035">
+                    </path>
+                </g></g>
+            </svg>
+        </button>
+        <div id="dessertMenu" class="dropdown">
+            <button>Apple crumble</button>
+            <button>Banana bread</button>
+            <button>Banana muffins</button>
+            <button>Brownie in a mug</button>
+            <button>Carrot cake cupcakes</button>
+            <button>Chocolate chip cookies</button>
+            <button>Peanut butter chocolate cupcakes</button>
+            <button>Red velvet cupcakes</button>
+            <button>Strawberry cupcakes</button>
+        </div>
+    </div>
+    <div id="adds">
+        <button id="addsBtn" class="topBtn">Additions/Basics
+            <svg class="down" width="clamp(8px, 12px, 1.5vw)" height="clamp(8px, 12px, 1.5vw)" viewBox="0 -4.5 20 15" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-180.000000, -6684.000000)" fill="#000000"><g transform="translate(56.000000, 160.000000)">
+                    <path d="M144,6525.39 L142.594,6524 L133.987,6532.261 L133.069,6531.38 L133.074,6531.385 L125.427,6524.045
+                        L124,6525.414 C126.113,6527.443 132.014,6533.107 133.987,6535 C135.453,6533.594 134.024,6534.965 144,6525.39">
+                    </path>
+                </g></g>
+            </svg>
+            <svg class="up" width="clamp(8px, 12px, 1.5vw)" height="clamp(8px, 12px, 1.5vw)" viewBox="0 -4.5 20 15" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-140.000000, -6683.000000)" fill="#000000"><g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path d="M84,6532.61035 L85.4053672,6534 L94.0131154,6525.73862 L94.9311945,6526.61986 L94.9261501,6526.61502
+                        L102.573446,6533.95545 L104,6532.58614 C101.8864,6530.55736 95.9854722,6524.89321 94.0131154,6523
+                        C92.5472155,6524.40611 93.9757869,6523.03486 84,6532.61035">
+                    </path>
+                </g></g>
+            </svg>
+        </button>
+        <div id="addsMenu" class="dropdown">
+            <button>Boiled eggs</button>
+            <button>Candied walnuts</button>
+            <button>Mango salsa</button>
+            <button>Oreo frosting</button>
+            <button>Rice</button>
+        </div>
+    </div>
+</div>
+
+<div id="imageScroll">
+    <div id="leftSide">
+        <svg width="clamp(25px, 50px, 4vw)" height="clamp(25px, 50px, 4vw)" viewBox="-4.5 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-385.000000, -6679.000000)" fill="pink">
+                <g transform="translate(56.000000, 160.000000)">
+                    <path d="M338.61,6539 L340,6537.594 L331.739,6528.987 L332.62,6528.069 L332.615,6528.074 L339.955,6520.427
+                    L338.586,6519 C336.557,6521.113 330.893,6527.014 329,6528.987 C330.406,6530.453 329.035,6529.024 338.61,6539">
+                    </path>
+                </g>
+            </g>
+        </svg>
+    </div>
+<div id="images">
+    <button><span>Browse breakfasts</span><img src="images/breakfast.jpg" alt="Ice cream cones" class="image"></button>
+    <button><span>Browse lunches & dinners</span><img src="images/lunch.jpg" alt="Dinner spread" class="image"></button>
+    <button><span>Browse desserts</span><img src="images/dessert.jpg" alt="Ice cream cones" class="image"></button>
+    <button><span>Browse additions</span><img src="images/addition.jpeg" alt="Ice cream cones" class="image"></button>
+</div>
+    <div id="rightSide">
+        <svg width="clamp(25px, 50px, 4vw)" height="clamp(25px, 50px, 4vw)" viewBox="-4.5 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-425.000000, -6679.000000)" fill="pink">
+                <g transform="translate(56.000000, 160.000000)">
+                    <path d="M370.39,6519 L369,6520.406 L377.261,6529.013 L376.38,6529.931 L376.385,6529.926 L369.045,6537.573
+                    L370.414,6539 C372.443,6536.887 378.107,6530.986 380,6529.013 C378.594,6527.547 379.965,6528.976 370.39,6519">
+                    </path>
+                </g>
+            </g>
+        </svg>
+    </div>
+</div>
+
+<div id="favourites">
+    My favourites
+</div>
+
+<script src="functions.js"></script>
 </body>
 </html>
