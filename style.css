@@ -10,7 +10,9 @@ button {
     font-family: "Calibri", serif;
     cursor: pointer;
     background: transparent;
+    color: black;
 }
+
 
 #header {
     position: relative;
@@ -29,16 +31,13 @@ button {
     position: sticky;
     top: 0;
     background: #ffdce3;
-    padding-top: 0.4em;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
-    padding-bottom: 0.7em;
-    gap: 0.2em;
+    padding: 0.4em 0.5em 0.7em;
+    gap: 1em;
     z-index: 2;
 }
 
 #homeBtn, .topBtn {
-    font-size: clamp(14px, 20px, 2.8vw);
+    font-size: clamp(1.05em, 1.3em, 3vw);
     font-variant: all-small-caps;
     font-weight: bold;
     height: 1em;
@@ -54,7 +53,7 @@ button {
 }
 
 .dropdown button {
-    font-size: clamp(12px, 16px, 2vw);
+    font-size: clamp(14px, 16px, 2vw);
     text-align: left;
     white-space: nowrap;
     padding-bottom: 0.5em;
@@ -191,11 +190,6 @@ button {
     scale: 1.03;
 }
 
-ul {
-    padding: 0 0 0 2em;
-    margin: 0 2em 0 0;
-}
-
 #favs {
     padding: 1em;
     padding-bottom: 3.5em;
@@ -212,11 +206,10 @@ ul {
     font-size: 35px;
     display: flex;
     align-content: center;
-    margin-bottom: 1.9em;
-    gap: 0.3em;
 }
 
 #favBtns {
+    margin-top: 2.3em;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -225,34 +218,24 @@ ul {
 }
 
 .fav {
-    min-width: 300px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background: white;
-    padding-top: 0.8em;
-    padding-right: 1em;
-    padding-left: 1em;
-    padding-bottom: 0.5em;
+    padding: 0.8em 1em 0.5em;
     font-variant: all-small-caps;
     font-style: normal;
-    text-align: center;
-
 }
 
-.fav img {
-    margin-top: 0.7em;
-    margin-left: 0.3em;
-    margin-bottom: 0.3em;
+.fav .image {
+    margin-top: 1em;
 }
 
 .favPreviews {
     display: none;
 }
-
-
-
-
 
 
 

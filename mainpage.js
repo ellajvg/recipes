@@ -14,20 +14,12 @@ function displayMenu(id) {
     const dropdown = document.getElementById(id);
     dropdown.classList.add('visible');
     dropdown.classList.remove('hidden');
-
-    const sectionId = id.replace('Menu', '');
-    document.getElementById(sectionId).querySelector('.down').style.display = 'none';
-    document.getElementById(sectionId).querySelector('.up').style.display = 'inline-block';
 }
 
 function hideMenu(id) {
     const dropdown = document.getElementById(id);
     dropdown.classList.add('hidden');
     dropdown.classList.remove('visible');
-
-    const sectionId = id.replace('Menu', '');
-    document.getElementById(sectionId).querySelector('.up').style.display = 'none';
-    document.getElementById(sectionId).querySelector('.down').style.display = 'inline-block';
 }
 
 function hideOtherMenus(currentId) {
@@ -116,10 +108,5 @@ function getVisibleMenu() {
     }
 }
 
-
-
-function displayFavPreview() {
-
-}
 
 
