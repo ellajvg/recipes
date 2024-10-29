@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #ffdce3;
+}
+
+#fullRecipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    max-width: 100%;
+    padding: 3em 4em 4em;
+    box-shadow: 0 4px 10px pink;
+    overflow: hidden;
+    background: white;
+}
+
+#recipeTitle {
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.2em;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#original {
+    font-size: 15px;
+    text-align: left;
+    font-style: italic;
+    color: black;
+}
+
+#ingredientsPhoto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+a {
+   color: black;
+}
+
+#separator {
+    padding: 0.3em;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+
+ol {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 1em;
+    font-size: 17px;
+}
+
+ul li, ol li{
+    line-height: 2;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    margin-top: 0.5em;
+    font-variant: all-small-caps;
+}
+
+#instructions {
+    margin-top: 1em;
+}
+
+@media (max-width: 700px) {
+    #ingredientsPhoto {
+        grid-template-columns: 1fr;
+    }
+
+    #ingredients {
+        order: 2;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.5em;
+    }
+}

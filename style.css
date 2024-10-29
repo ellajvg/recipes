@@ -8,6 +8,8 @@ button {
     transition: scale 0.5s ease;
     border: none;
     font-family: "Calibri", serif;
+    cursor: pointer;
+    background: transparent;
 }
 
 #header {
@@ -27,13 +29,15 @@ button {
     position: sticky;
     top: 0;
     background: #ffdce3;
-    padding: 0.2em;
+    padding-top: 0.4em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-bottom: 0.7em;
     gap: 0.2em;
     z-index: 2;
 }
 
 #homeBtn, .topBtn {
-    background: transparent;
     font-size: clamp(14px, 20px, 2.8vw);
     font-variant: all-small-caps;
     font-weight: bold;
@@ -41,21 +45,24 @@ button {
 }
 
 .dropdown {
-    margin-top: 0.5em;
+    margin-top: 0.7em;
     display: none;
     position: absolute;
     background: white;
-    padding: 4px;
+    padding: 1em;
     flex-direction: column;
 }
 
 .dropdown button {
-    background: transparent;
-    font-variant: normal;
-    font-size: clamp(10px, 16px, 2vw);
+    font-size: clamp(12px, 16px, 2vw);
     text-align: left;
     white-space: nowrap;
-    padding-bottom: 4px;
+    padding-bottom: 0.5em;
+    transition: scale 0.3s ease;
+}
+
+.dropdown button:hover {
+    scale: 1.03;
 }
 
 .up {
@@ -74,7 +81,7 @@ button {
 #imageScroll {
     display: flex;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 3em;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
     align-items: stretch;
@@ -87,7 +94,7 @@ button {
     z-index: 1;
 }
 
-#images {
+#images, .browse {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -99,11 +106,12 @@ button {
 
 #images button {
     background: transparent;
-    padding-top: 2em;
-    padding-bottom: 4em;
+    padding-top: 1.55em;
+    padding-bottom: 2em;
     outline: 6px solid pink;
     border: 10px solid #ffdce3;
     font-weight: bold;
+    min-width: 350px;
 }
 
 #images button:hover {
@@ -111,9 +119,9 @@ button {
 }
 
 .image {
-    width: 320px;
-    height: 200px;
-    margin-top: 1em;
+    width: 280px;
+    height: 280px;
+    margin-top: 1.5em;
 }
 
 #images span {
@@ -121,14 +129,128 @@ button {
     white-space: nowrap;
 }
 
-#favourites {
+.browse {
+    display: none;
+}
+
+.preview {
+    background: transparent;
+    outline: 6px solid pink;
+    overflow: auto;
+    height: 400px;
+    min-width: 320px;
+}
+
+.previewTitle {
+    position: sticky;
+    top:0;
+    padding: 1em 2em;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    background: pink;
+    text-align: center;
+}
+
+.ingredientTitle {
+    background: white;
+    font-weight: bold;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+}
+
+.ingredients {
+    min-height: 40vh;
+    margin-bottom: 2em;
+}
+
+.previewInformation {
+    box-shadow: 0 10px 10px 30px white;
+    padding: 0.5em;
+    background: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+}
+
+.toRecipeBtn {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-variant: all-small-caps;
+    font-size: 20px;
+}
+
+.toRecipeBtn:hover {
+    scale: 1.03;
+}
+
+ul {
+    padding: 0 0 0 2em;
+    margin: 0 2em 0 0;
+}
+
+#favs {
     padding: 1em;
+    padding-bottom: 3.5em;
     font-size: 30px;
     font-style: italic;
     font-weight: bold;
     margin-top: 2em;
-    background: #ffdce3;
+    background-image: url('images/hearts.jpg');
+    background-size: 100% auto;
+
 }
+
+#favTitle {
+    font-size: 35px;
+    display: flex;
+    align-content: center;
+    margin-bottom: 1.9em;
+    gap: 0.3em;
+}
+
+#favBtns {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.fav {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    padding-top: 0.8em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    font-variant: all-small-caps;
+    font-style: normal;
+    text-align: center;
+
+}
+
+.fav img {
+    margin-top: 0.7em;
+    margin-left: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.favPreviews {
+    display: none;
+}
+
+
 
 
 
