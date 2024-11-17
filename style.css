@@ -13,7 +13,6 @@ button {
     color: black;
 }
 
-
 #header {
     position: relative;
     display: flex;
@@ -34,13 +33,13 @@ button {
     padding: 0.4em 0.5em 0.7em;
     gap: 1em;
     z-index: 2;
+    flex-wrap: wrap;
 }
 
 #homeBtn, .topBtn {
-    font-size: clamp(1.05em, 1.3em, 3vw);
+    font-size: clamp(17px, 20px, 3vw);
     font-variant: all-small-caps;
     font-weight: bold;
-    height: 1em;
 }
 
 .dropdown {
@@ -55,17 +54,13 @@ button {
 .dropdown button {
     font-size: clamp(14px, 16px, 2vw);
     text-align: left;
-    white-space: nowrap;
+    white-space: wrap;
     padding-bottom: 0.5em;
     transition: scale 0.3s ease;
 }
 
 .dropdown button:hover {
     scale: 1.03;
-}
-
-.up {
-   display: none;
 }
 
 .hidden {
@@ -83,7 +78,6 @@ button {
     margin-top: 3em;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
-    align-items: stretch;
 }
 
 #leftSide, #rightSide {
@@ -142,7 +136,7 @@ button {
 
 .previewTitle {
     position: sticky;
-    top:0;
+    top: 0;
     padding: 1em 2em;
     font-style: italic;
     font-weight: bold;
@@ -199,7 +193,6 @@ button {
     margin-top: 2em;
     background-image: url('images/hearts.jpg');
     background-size: 100% auto;
-
 }
 
 #favTitle {
@@ -236,6 +229,19 @@ button {
 .favPreviews {
     display: none;
 }
+/*
+@media (max-width: 500px) {
+    #homeBtn, .topBtn {
+        font-size: 80px !important;
+    }
+
+    .dropdown button {
+        font-size: 200px !important;
+    }
+}
+
+ */
+
 
 
 
