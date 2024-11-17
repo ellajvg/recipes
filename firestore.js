@@ -85,6 +85,18 @@ recipeButtons.forEach(button => {
     });
 });
 
+const dropdownButtons = document.querySelectorAll('.dropdown button');
+dropdownButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        let recipeId = this.id;
+        recipeId = recipeId.replace("D", "");
+        let collectionId = this.parentElement.id;
+        collectionId = collectionId.charAt(0).toUpperCase() + collectionId.slice(1);
+        collectionId = collectionId.replace("Menu", "Recipes");
+        viewRecipe(collectionId, recipeId);
+    });
+});
+
 
 async function viewRecipe(collection, recipe) {
     localStorage.clear()
