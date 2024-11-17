@@ -229,19 +229,6 @@ button {
 .favPreviews {
     display: none;
 }
-/*
-@media (max-width: 500px) {
-    #homeBtn, .topBtn {
-        font-size: 80px !important;
-    }
-
-    .dropdown button {
-        font-size: 200px !important;
-    }
-}
-
- */
-
 
 
 

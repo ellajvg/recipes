@@ -126,17 +126,6 @@ async function viewRecipe(collection, recipe) {
         let ins2Title = recipeDiv.querySelector(".ing2").textContent;
         ins2Title = ins2Title.replace("Ingredients", "Steps");
         localStorage.setItem('instructions2Title', ins2Title);
-        /*
-        const instructionList3 = docSnap.data().instructions3;
-        if (instructionList3) {
-            localStorage.setItem('instructions3', JSON.stringify(instructionList3));
-            let ins3Title = recipeDiv.querySelector(".ing3").textContent;
-            ins3Title = ins3Title.replace("Ingredients", "Steps");
-            localStorage.setItem('instructions3Title', ins3Title);
-
-        }
-
-         */
     }
 
     window.open('full/index.html');
