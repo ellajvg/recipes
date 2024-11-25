@@ -67,14 +67,14 @@ document.getElementById("leftSide").addEventListener("click", function() {
     const images = document.getElementById("images");
     if (images.style.display !== 'none') {
         images.scrollBy({
-            left: -300,
+            left: -390,
             behavior: 'smooth'
         });
     } else {
         const browseId = getVisibleMenu();
         const browse = document.getElementById(browseId);
         browse.scrollBy({
-            left: -300,
+            left: -390,
             behavior: 'smooth'
         });
     }
@@ -84,14 +84,14 @@ document.getElementById("rightSide").addEventListener("click", function() {
     const images = document.getElementById("images");
     if (images.style.display !== 'none') {
         images.scrollBy({
-            left: 300,
+            left: 390,
             behavior: 'smooth'
         });
     } else {
         const browseId = getVisibleMenu();
         const browse = document.getElementById(browseId);
         browse.scrollBy({
-            left: 300,
+            left: 390,
             behavior: 'smooth'
         });
     }
