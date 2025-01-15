@@ -97,50 +97,62 @@ dropdownButtons.forEach(button => {
     });
 });
 
-
 async function viewRecipe(collection, recipe) {
-    localStorage.clear()
+    let recipeInfo = [];
 
     const docRef = doc(db, collection, recipe);
     const docSnap = await getDoc(docRef);
     const recipeDiv = document.getElementById(recipe);
 
-    localStorage.setItem('recipeTitle', docSnap.data().title);
-    localStorage.setItem('author', docSnap.data().author);
-    localStorage.setItem('link', docSnap.data().link);
-    localStorage.setItem('photo', recipe + ".jpg");
+    recipeInfo.push(docSnap.data().title);
+    recipeInfo.push(docSnap.data().author);
+    recipeInfo.push(docSnap.data().link);
+    recipeInfo.push(recipe + '.jpg');
 
     const ing1Title = recipeDiv.querySelector(".ing1").textContent;
-    localStorage.setItem('ingredients1Title', ing1Title);
+    recipeInfo.push(ing1Title);
     const ingredientList1 = docSnap.data().ingredients;
-    localStorage.setItem('ingredients1', JSON.stringify(ingredientList1));
+    recipeInfo.push(JSON.stringify(ingredientList1));
     const ingredientList2 = docSnap.data().ingredients2;
     if (ingredientList2) {
-        localStorage.setItem('ingredients2', JSON.stringify(ingredientList2));
         const ing2Title = recipeDiv.querySelector(".ing2").textContent;
-        localStorage.setItem('ingredients2Title', ing2Title);
+        recipeInfo.push(ing2Title);
+        recipeInfo.push(JSON.stringify(ingredientList2));
         const ingredientList3 = docSnap.data().ingredients3;
         if (ingredientList3) {
-            localStorage.setItem('ingredients3', JSON.stringify(ingredientList3));
             const ing3Title = recipeDiv.querySelector(".ing3").textContent;
-            localStorage.setItem('ingredients3Title', ing3Title);
+            recipeInfo.push(ing3Title);
+            recipeInfo.push(JSON.stringify(ingredientList3));
+        } else {
+            recipeInfo.push('');
+            recipeInfo.push('');
         }
+    } else {
+        recipeInfo.push('');
+        recipeInfo.push('');
+        recipeInfo.push('');
+        recipeInfo.push('');
     }
 
     let ins1Title = recipeDiv.querySelector(".ing1").textContent;
     ins1Title = ins1Title.replace("Ingredients", "Steps");
-    localStorage.setItem('instructions1Title', ins1Title);
+    recipeInfo.push(ins1Title);
     const instructionList1 = docSnap.data().instructions;
-    localStorage.setItem('instructions1', JSON.stringify(instructionList1));
+    recipeInfo.push(JSON.stringify(instructionList1));
     const instructionList2 = docSnap.data().instructions2;
     if (instructionList2) {
-        localStorage.setItem('instructions2', JSON.stringify(instructionList2));
         let ins2Title = recipeDiv.querySelector(".ing2").textContent;
         ins2Title = ins2Title.replace("Ingredients", "Steps");
-        localStorage.setItem('instructions2Title', ins2Title);
+        recipeInfo.push(ins2Title);
+        recipeInfo.push(JSON.stringify(instructionList2));
+    } else {
+        recipeInfo.push('');
+        recipeInfo.push('');
     }
 
-    window.open('full/index.html');
+    localStorage.setItem('recipeInfo', JSON.stringify(recipeInfo));
+
+    window.open('full/');
 }
 
 function addIngredients(divId, ingredients) {

@@ -158,6 +158,10 @@ button {
     margin-bottom: 2em;
 }
 
+ul {
+    margin: 0;
+}
+
 .previewInformation {
     box-shadow: 0 10px 10px 30px white;
     padding: 0.5em;
@@ -178,6 +182,7 @@ button {
     font-weight: bold;
     font-variant: all-small-caps;
     font-size: 20px;
+    text-align: center;
 }
 
 .toRecipeBtn:hover {
@@ -185,8 +190,7 @@ button {
 }
 
 #favs {
-    padding: 1em;
-    padding-bottom: 3.5em;
+    padding: 1em 1em 3.5em;
     font-size: 30px;
     font-style: italic;
     font-weight: bold;
@@ -229,6 +233,7 @@ button {
 .favPreviews {
     display: none;
 }
+
 
 
 
